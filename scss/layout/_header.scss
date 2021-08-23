@@ -1,0 +1,29 @@
+@import "../utilities/variables";
+
+header {
+    height: 8vh;
+
+    nav {
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__logo {
+            .bx {
+                font-size: 6rem;
+                color: $color-dark;
+                margin: 0 1rem;
+            }
+        }
+
+        h1 {
+            margin: 5%;
+        }
+
+    }
+}
+    p {
+        color: $color-dark;
+    }

@@ -1,0 +1,131 @@
+
+.shop {
+
+    .prodDestacado {
+        background-color: $color-1;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 5vh 0;
+
+        .prodDestacado__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .prodDestacado__info {
+            width: 40vw;
+            max-width: 460px;
+            display: flex;
+            flex-flow: column nowrap;
+
+            h3{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p {
+                &:first-of-type{
+                    font-size: 3rem;
+                }
+                &:last-of-type{
+                    font-size: 1.7rem;
+                }
+            }
+            .prodDestacado__info--compra {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                padding: 5vh 0;
+
+
+                .precio{
+                    color: $color-dark;
+                }
+
+                .card__counter {
+                    height: 40px;
+                    background-color: #4285EB;
+                    display: inline-flex;
+                    border-radius: 20px;
+        
+                    button,
+                    input {
+                        width: 40px;
+                        border: 0;
+                        font-size: 3rem;
+                        background-color: #4285EB;
+                        color: #FFFFFF;
+                        text-align: center;
+                        outline: none;
+                    }
+        
+                    &>button {
+                        cursor: pointer;
+                        border-radius: 50%;
+                        transition: all .2s ease-in-out;
+                    }
+        
+                    &>button:hover {
+                        background-color: #2169D6;
+                    }
+                }
+            }
+        }
+    }
+
+    .card {
+        width: 50vw;
+        border: none;
+        background-color: $color-1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin: 0 auto;
+
+        .card__img {
+            width: 380px;
+            height: auto;
+            padding: 3rem 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .card__price {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+
+            .card__icon {
+                font-size: 4rem;
+            }
+
+            .card__price--text {
+                font-size: 2rem;
+            }
+        }
+        .card__price--before {
+            text-decoration: line-through;
+        }
+
+        
+    }
+}
+
+.btnShowSneakers {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+}

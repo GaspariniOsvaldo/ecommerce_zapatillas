@@ -1,0 +1,227 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+html ul {
+  list-style: none;
+}
+html a {
+  text-decoration: none;
+}
+
+/* Variables */
+/* Color */
+/* Fonts */
+header {
+  height: 8vh;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav__logo .bx {
+  font-size: 6rem;
+  color: #161616;
+  margin: 0 1rem;
+}
+header nav h1 {
+  margin: 5%;
+}
+
+p {
+  color: #161616;
+}
+
+/* Variables */
+/* Color */
+/* Fonts */
+/* Variables */
+/* Color */
+/* Fonts */
+body {
+  background-color: #FFF;
+  color: #161616;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.shop .prodDestacado {
+  background-color: #E3F8FF;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 5vh 0;
+}
+.shop .prodDestacado .prodDestacado__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+.shop .prodDestacado .prodDestacado__img img {
+  width: 70%;
+}
+.shop .prodDestacado .prodDestacado__info {
+  width: 40vw;
+  max-width: 460px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.shop .prodDestacado .prodDestacado__info h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.shop .prodDestacado .prodDestacado__info p:first-of-type {
+  font-size: 3rem;
+}
+.shop .prodDestacado .prodDestacado__info p:last-of-type {
+  font-size: 1.7rem;
+}
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding: 5vh 0;
+}
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra .precio {
+  color: #161616;
+}
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra .card__counter {
+  height: 40px;
+  background-color: #4285EB;
+  display: inline-flex;
+  border-radius: 20px;
+}
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra .card__counter button,
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra .card__counter input {
+  width: 40px;
+  border: 0;
+  font-size: 3rem;
+  background-color: #4285EB;
+  color: #FFFFFF;
+  text-align: center;
+  outline: none;
+}
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra .card__counter > button {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.shop .prodDestacado .prodDestacado__info .prodDestacado__info--compra .card__counter > button:hover {
+  background-color: #2169D6;
+}
+.shop .card {
+  width: 50vw;
+  border: none;
+  background-color: #E3F8FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.shop .card .card__img {
+  width: 380px;
+  height: auto;
+  padding: 3rem 0;
+}
+.shop .card .card__img img {
+  width: 100%;
+}
+.shop .card .card__price {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.shop .card .card__price .card__icon {
+  font-size: 4rem;
+}
+.shop .card .card__price .card__price--text {
+  font-size: 2rem;
+}
+.shop .card .card__price--before {
+  text-decoration: line-through;
+}
+
+.btnShowSneakers {
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Variables */
+/* Color */
+/* Fonts */
+.iniciarSesionMain {
+  background-image: url(../../img/backgroundSignUp.jpg);
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iniciarSesionMain .iniciarSesion__form {
+  background: rgba(255, 255, 255, 0.5);
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.iniciarSesionMain .iniciarSesion__form h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Julius Sans One", sans-serif;
+}
+.iniciarSesionMain .iniciarSesion__form form {
+  margin: 4rem;
+}
+.iniciarSesionMain .iniciarSesion__form form label {
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+  margin: 1rem;
+}
+.iniciarSesionMain .iniciarSesion__form form input, .iniciarSesionMain .iniciarSesion__form form button {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #161616;
+  color: #161616;
+  font-family: "Montserrat", sans-serif;
+  margin: 5px;
+  padding: 0 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.iniciarSesionMain .iniciarSesion__form form input:focus, .iniciarSesionMain .iniciarSesion__form form button:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.iniciarSesionMain .iniciarSesion__form form button {
+  transition: all 0.8s ease-out;
+}
+.iniciarSesionMain .iniciarSesion__form form button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  transition: all 0.8s ease;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
