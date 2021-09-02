@@ -4,7 +4,7 @@
     .prodDestacado {
         background-color: $color-1;
         width: 100%;
-        height: auto;
+        height: calc(92vh);
         display: flex;
         justify-content: space-around;
         padding: 5vh 0;
@@ -13,10 +13,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40vw;
+            width: 60vw;
 
-            img {
-                width: 70%;
+            .container__img {
+                background-color: $color-dark;
+                border-radius: 50%;
+                width: 30vw;
+                height: 30vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                img {
+                    width: 140%;
+                    transform: rotate(30deg);
+                }
             }
         }
 
@@ -25,6 +37,8 @@
             max-width: 460px;
             display: flex;
             flex-flow: column nowrap;
+            justify-content: center;
+            font-family: $font-secondary;
 
             h3{
                 font-size: 4rem;
@@ -121,6 +135,39 @@
         }
 
         
+    }
+
+    .productos {
+        margin: 4rem;
+        display: grid;
+        flex-flow: row wrap;
+        grid-template-columns: repeat(3, 1fr);
+
+        article {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-2;
+            border: 1px solid $color-dark;
+            border-radius: 5px;
+            width: min-content;
+
+            img {
+                width: 25vw;
+                background-color: #C5C5C5;
+                padding: 2rem;
+            }
+            h4, h5 {
+                display: inline;
+                padding: 1rem 2rem;
+                font-weight: 700;
+                font-family: $font-secondary;
+            }
+            input {
+                margin: 1rem;
+            }
+        }
     }
 }
 

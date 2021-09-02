@@ -2,6 +2,10 @@
 
 header {
     height: 8vh;
+    position: fixed;
+    width: 100vw;
+    background-color: #FFF;
+    z-index: 5000;
 
     nav {
         height: 100%;
@@ -10,16 +14,18 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        .nav__logo {
+        .carrito {
             .bx {
-                font-size: 6rem;
+                font-size: 4rem;
                 color: $color-dark;
                 margin: 0 1rem;
+                display: none;
             }
         }
 
         h1 {
             margin: 5%;
+            font-weight: 600;
         }
 
     }

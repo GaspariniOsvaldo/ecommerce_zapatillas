@@ -13,6 +13,7 @@
         background: rgba(255, 255, 255, 0.5);
         width: 30vw;
         height: 50vh;
+        position: relative;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -63,5 +64,14 @@
                 }
             }
         }
+    }
+
+    #anuncioIniciasteSesion {
+        position: absolute;
+        top: auto;
+        left: auto;
+        background-color: #FFF;
+        display: none;
+        padding: 2rem;
     }
 }

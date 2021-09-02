@@ -22,6 +22,10 @@ html a {
 /* Fonts */
 header {
   height: 8vh;
+  position: fixed;
+  width: 100vw;
+  background-color: #FFF;
+  z-index: 5000;
 }
 header nav {
   height: 100%;
@@ -30,13 +34,15 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header nav .nav__logo .bx {
-  font-size: 6rem;
+header nav .carrito .bx {
+  font-size: 4rem;
   color: #161616;
   margin: 0 1rem;
+  display: none;
 }
 header nav h1 {
   margin: 5%;
+  font-weight: 600;
 }
 
 p {
@@ -58,7 +64,7 @@ body {
 .shop .prodDestacado {
   background-color: #E3F8FF;
   width: 100%;
-  height: auto;
+  height: calc(92vh);
   display: flex;
   justify-content: space-around;
   padding: 5vh 0;
@@ -67,16 +73,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 60vw;
 }
-.shop .prodDestacado .prodDestacado__img img {
-  width: 70%;
+.shop .prodDestacado .prodDestacado__img .container__img {
+  background-color: #161616;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop .prodDestacado .prodDestacado__img .container__img img {
+  width: 140%;
+  transform: rotate(30deg);
 }
 .shop .prodDestacado .prodDestacado__info {
   width: 40vw;
   max-width: 460px;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 .shop .prodDestacado .prodDestacado__info h3 {
   font-size: 4rem;
@@ -156,6 +174,36 @@ body {
 .shop .card .card__price--before {
   text-decoration: line-through;
 }
+.shop .productos {
+  margin: 4rem;
+  display: grid;
+  flex-flow: row wrap;
+  grid-template-columns: repeat(3, 1fr);
+}
+.shop .productos article {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #DCFAFB;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  width: min-content;
+}
+.shop .productos article img {
+  width: 25vw;
+  background-color: #C5C5C5;
+  padding: 2rem;
+}
+.shop .productos article h4, .shop .productos article h5 {
+  display: inline;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.shop .productos article input {
+  margin: 1rem;
+}
 
 .btnShowSneakers {
   margin: 4rem;
@@ -179,6 +227,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
   width: 30vw;
   height: 50vh;
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -222,6 +271,14 @@ body {
   color: #000;
   transition: all 0.8s ease;
   border-radius: 5px;
+}
+.iniciarSesionMain #anuncioIniciasteSesion {
+  position: absolute;
+  top: auto;
+  left: auto;
+  background-color: #FFF;
+  display: none;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
